@@ -1,0 +1,144 @@
+/* === GLOBAL RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#eceffe, #ced6fb);
+    background-size: cover;
+    color: #333;
+  }
+
+  /* === SWIPER CONTAINER === */
+  .swiper-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+   
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    gap: 20px;
+    
+  }
+  .swiper-slide {
+    flex: 0 0 30%;
+    width: 300px;
+  }
+  /* === CARD LINK === */
+  .card-link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: auto;
+    background: #fff;
+    padding: 20px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    align-items: center;
+  }
+
+  .card-link:hover {
+    border-color: #5372f0;
+  }
+
+  /* === CARD IMAGE === */
+  .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* === BADGE === */
+  .badge {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 40px 20px 20px;
+    padding: 8px 15px;
+    width: fit-content;
+    border-radius: 50px;
+    background: #ffe3d2;
+  }
+
+  .badge.coding { color: #4c5c20; }
+
+  /* === CARD CONTENT === */
+  .card-title {
+    font-size: 1.19rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  /* === CARD BUTTON === */
+  .card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372f0;
+    background: none;
+    border: 2px solid #5372f0;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 30px 0 5px;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+  }
+
+  .card-link:hover .card-button {
+    color: #fff;
+    background: #5372f8;
+  }
+
+  /* === SWIPER NAVIGATION + PAGINATION === */
+  .swiper-button-prev{
+    position: fixed;
+    top: 50%;
+    transform: translate(50%);
+    z-index: 10;
+    color: #5372f0;
+  }
+
+  .swiper-button-next {
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+    color: #5372f0;
+  }
+
+  .swiper-pagination-bullet {
+    background: #5372f0;
+  }
+
+  .swiper-button-prev{
+    position: fixed;
+    left: 10px;
+    transform: translate(-50%);
+   
+  } 
+  .swiper-button-next {
+    position: fixed;
+    right: 10px;
+    top:50% ;
+    transform: translateY(-50%);
+   
+  }

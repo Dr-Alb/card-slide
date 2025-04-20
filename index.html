@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Card Slide</title>
+
+  <!-- Font Awesome and Swiper CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <!-- Card 1 -->
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="pics/jeremy-yap-jn-HaGWe4yw-unsplash.jpg" alt="Brown Coffee" class="card-image" />
+          <p class="badge brown">Brown Coffee ☕</p>
+          <h2 class="card-title">Coffee Time</h2>
+          <p class="card-description">Delicious brown coffee delivered right to your door, anytime ☕</p>
+          <button class="card-button"><i class="fas fa-arrow-right"></i></button>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="pics/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg" alt="Coding" class="card-image" />
+          <p class="badge coding">Coding Gurus 👩‍🎓</p>
+          <h2 class="card-title">Programming Time 👨‍💻</h2>
+          <p class="card-description">For the code ninjas 🤖 — place your order and smile 😊</p>
+          <button class="card-button"><i class="fas fa-arrow-right"></i></button>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="pics/gallery-1.jpg" alt="Hot Coffee" class="card-image" />
+          <p class="badge hot">Hot Coffee</p>
+          <h2 class="card-title">Hot Coffee ☕</h2>
+          <p class="card-description">Craving something hot? We’ve got you covered. Just order ☕</p>
+          <button class="card-button"><i class="fas fa-arrow-right"></i></button>
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="pics/gallery-2.jpg" alt="Spicy Meals" class="card-image" />
+          <p class="badge spicy">Spicy Meals</p>
+          <h2 class="card-title">Breakfast Boost 🍳</h2>
+          <p class="card-description">Spice up your breakfast with our delicious meals 🍝</p>
+          <button class="card-button"><i class="fas fa-arrow-right"></i></button>
+        </a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="pics/gallery-3.jpg" alt="Drinks" class="card-image" />
+          <p class="badge drinks">Drinks</p>
+          <h2 class="card-title">Drink Time 🍓</h2>
+          <p class="card-description">Refreshing fruit drinks that match your taste 😋</p>
+          <button class="card-button"><i class="fas fa-arrow-right"></i></button>
+        </a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="pics/gallery-4.jpg" alt="Appetizer" class="card-image" />
+          <p class="badge appetizer">Appetizers</p>
+          <h2 class="card-title">Perfect Choice 😍</h2>
+          <p class="card-description">Want a tasty appetizer? Just say the word, boss 😎</p>
+          <button class="card-button"><i class="fas fa-arrow-right"></i></button>
+        </a>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="pics/gallery-5.jpg" alt="Burger" class="card-image" />
+          <p class="badge burger">Burger</p>
+          <h2 class="card-title">Tasty Pick 😮</h2>
+          <p class="card-description">We deliver what you ask for — not just what's available 🍔</p>
+          <button class="card-button"><i class="fas fa-arrow-right"></i></button>
+        </a>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="pics/gallery-6.jpg" alt="Natural Honey" class="card-image" />
+          <p class="badge natural">Natural</p>
+          <h2 class="card-title">Pure Honey 🍯</h2>
+          <p class="card-description">For the natural lovers — fresh honey without the sting 😂</p>
+          <button class="card-button"><i class="fas fa-arrow-right"></i></button>
+        </a>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="pics/gallery-3.jpg" alt="Ice Cream" class="card-image" />
+          <p class="badge icecream">Ice Cream</p>
+          <h2 class="card-title">Ice Cream 🍦</h2>
+          <p class="card-description">For the sweet tooth — ice cream delivered to your door 🍨</p>
+          <button class="card-button"><i class="fas fa-arrow-right"></i></button>
+        </a>
+      </div>
+    </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+      </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Initialization -->
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      }
+    });
+  </script>
+</body>
+</html>
